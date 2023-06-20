@@ -1,5 +1,5 @@
 #include <stdio.h>
-int main ()
+int main()
 {
 	int first = 1;
 	int second = 2;
@@ -12,13 +12,10 @@ int main ()
 		{
 			sum += first;
 		}
-
 		next = first + second;
 		first = second;
 		second = next;
 	}
-
 	printf("%d\n", sum);
-
 	return 0;
 }
