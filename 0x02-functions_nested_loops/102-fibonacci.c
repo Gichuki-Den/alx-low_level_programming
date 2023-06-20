@@ -7,10 +7,10 @@
 */
 void fib(void)
 {
-  int i;
-  unsigned long f = 1;
-  unsigned long s = 2;
-  unsigned long r;
+	long i;
+	unsigned long f = 1;
+	unsigned long s = 2;
+	unsigned long r;
 
 	for (i = 0; i < 50; i++)
 	{
