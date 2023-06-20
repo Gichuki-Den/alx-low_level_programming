@@ -1,36 +1,27 @@
 #include <stdio.h>
-
 /**
-* fib - Prints fibonacci numbers of 50
-*
-* Return: Always 0.
-*/
-void fib(void)
-{
-	int i;
-	unsigned long f = 1;
-	unsigned long s = 2;
-	unsigned long r;
-
-	for (i = 0; i <= 50; i++)
-	{
-		if (i == 0)
-		{
-			printf("%u, %u, ", f, s);
-			continue;
-		}
-		else if (i > 0)
-		{
-			r = f + s;
-			printf("%u, ", r);
-			f = s;
-			s = r;
-		}
-    }
-}
-
+ * main - print the first 50 fibonacci numbers.
+ * Return: Nothing.
+ */
 int main(void)
 {
-	fib();
+	unsigned long count, start, second, final;
+
+	start = 0;
+	second  = 1;
+
+	for (count = 0; count < 50; count++)
+	{
+		final = start + second;
+		start = second;
+		second = final;
+		printf("%lu", k);
+		if (count <= 49)
+			putchar('\n');
+		else
+		{
+			printf(", ");
+		}
+	}
 	return (0);
 }
