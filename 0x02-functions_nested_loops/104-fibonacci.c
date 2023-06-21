@@ -4,9 +4,9 @@
 */
 void fibo_seq(void)
 {
-	int current = 2;
-	int next = 1;
-	int count = 2;
+	unsigned int x= 2;
+	unsigned int y = 1;
+	unsigned int count = 2;
 
 	printf("1, 2");
 
