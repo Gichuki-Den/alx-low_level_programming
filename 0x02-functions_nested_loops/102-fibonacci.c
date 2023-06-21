@@ -1,35 +1,28 @@
 #include <stdio.h>
 /**
-* fibo - prints fibonacci numbers of first 98 order
+* fib - Prints fibonacci numbers of 50
 */
-void fibo(void)
+void fib(void)
 {
-	unsigned long x = 1;
-	unsigned long y = 2;
-	unsigned long z;
-	unsigned long count = 0;
+	unsigned long i;
+	unsigned long f = 0;
+	unsigned long  s = 1;
+	unsigned long  r;
 
-	while (count < 50)
-		if (count == 0)
-		{
-			printf("%lu, %lu,", x, y);
-		}
-		else
-		{
-		z = x + y;
-		printf(" %lu,", z);
-		x = y;
-		y = z;
-		}
-		count++
-	printf("\n");
+	for (i = 1; i < 50; i++)
+	{
+		r = f + s;
+		printf("%lu, ", r);
+		f = s;
+		s = r;
+	{
 }
 /**
-* main - return o and call the fibo function
+* main - return o and call the fib function
 * Return: Always 0.
 */
 int main(void)
 {
-	fibo();
+	fib();
 	return (0);
 }
