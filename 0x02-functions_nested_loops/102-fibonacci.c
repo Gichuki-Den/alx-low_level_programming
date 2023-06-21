@@ -14,12 +14,12 @@ int main(void)
 	{
 		if (i <= 0)
 		{
-			printf("%u, %u, ", x, y);
+			printf("%lu, %lu, ", x, y);
 		}
 		else if (i > 0)
 		{
 			z = x + y;
-			printf("%u, ", z);
+			printf("%lu, ", z);
 			x = y;
 			y = z;
 		}
