@@ -12,7 +12,7 @@ void fib(void)
 	unsigned long s = 2;
 	unsigned long r;
 
-	for (i = 0; i <= 95; i++)
+	for (i = 0; i <= 85; i++)
 	{
 		if (i != 0)
 		{
@@ -23,7 +23,7 @@ void fib(void)
 		{
 			printf("%lu, %lu, ", f, s);
 		}
-		if (i == 95)
+		if (i == 85)
 		{
 			r = f + s;
 			printf("%lu\n", r);
