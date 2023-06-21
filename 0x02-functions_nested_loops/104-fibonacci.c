@@ -1,30 +1,45 @@
 #include <stdio.h>
 /**
-* fibo_seq - prints fibonacci numbers of first 98 order
-*/
-void fibo_seq(void)
-{
-	unsigned long x = 0;
-	unsigned long y = 1;
-	unsigned long z;
-	unsigned long count = i;
-
-	while (count <= 98)
-	{
-		z = x + y;
-		printf("%lu, ", z);
-		x = y;
-		y = z;
-		count++;
-	}
-	printf("\n");
-}
-/**
-* main - return o and call the fibo_seq function
-* Return: Always 0.
+* main -A program that print the first 98 fibonacci numbers.
+* Return: Nothing.
 */
 int main(void)
 {
-	fibo_seq();
+	int fibonacci;
+	unsigned long num1, num2, num3;
+	unsigned long m, n, p, carry;
+
+	fibonacci = 0;
+	num1 = 0;
+	num2 = 1;
+	for (fibonacci = 1; fibonacci <= 91; fibonacci++)
+	{
+		num3 = num1 + num2;
+		num1 = num2;
+		num2 = num3;
+		printf("%lu, ", num3);
+	}
+	m = num1 % 1000;
+	num1 = num1 / 1000;
+	n = num2 % 1000;
+	num2 = num2 / 1000;
+	while (fibonacci <= 98)
+	{
+		carry = (m + n) / 1000;
+		p = (m + n) - carry * 1000;
+		num3 = (num1 + num2) + carry;
+		m = n;
+		n = p;
+		num1 = num2;
+		num2 = num3;
+		if (p >= 10)
+			printf("%lu%lu", num3, p);
+		else
+			printf("%lu0%lu", num3, p);
+		if (fibonacci != 98)
+			printf(", ");
+		fibonacci++;
+	}
+	putchar('\n');
 	return (0);
 }
