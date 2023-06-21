@@ -6,6 +6,7 @@ void fibo_seq(void)
 {
 	unsigned int x= 2;
 	unsigned int y = 1;
+	unsigned int z;
 	unsigned int count = 2;
 
 	printf("1, 2");
@@ -13,7 +14,7 @@ void fibo_seq(void)
 	while (count < 98)
 	{
 		x + y = z;
-		print(", %u, ", z);
+		printf(", %u, ", z);
 		x = z;
 		y = x;
 		
