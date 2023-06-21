@@ -9,12 +9,12 @@ void fibo_seq(void)
 	unsigned long z;
 	unsigned long count = 2;
 
-	printf("1, 2");
+	printf("1, 2,");
 
 	while (count < 98)
 	{
 		z = x + y;
-		printf(", %lu, ", z);
+		printf(" %lu, ", z);
 		x = y;
 		y = z;
 		count++;
