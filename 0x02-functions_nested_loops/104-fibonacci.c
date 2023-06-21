@@ -7,7 +7,7 @@ void fibo_seq(void)
 	unsigned long x = 1;
 	unsigned long y = 2;
 	unsigned long z;
-	unsigned long count = 0;
+	unsigned long count = 5;
 
 	printf("1, 2,");
 
