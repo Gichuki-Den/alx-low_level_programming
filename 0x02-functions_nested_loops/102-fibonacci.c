@@ -9,7 +9,7 @@ void fib(void)
 	unsigned long  s = 1;
 	unsigned long  r;
 
-	for (i = 1; i < 50; i++)
+	for (i = 1; i <= 50; i++)
 	{
 		r = f + s;
 		printf("%lu, ", r);
