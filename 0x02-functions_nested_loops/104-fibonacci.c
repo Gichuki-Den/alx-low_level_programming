@@ -21,7 +21,7 @@ void fibo_seq(void)
 		{
 			printf("%lu", z);
 		}
-		count++;
+		i++;
 	}
 	printf("\n");
 }
