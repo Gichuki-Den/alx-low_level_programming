@@ -1,7 +1,8 @@
 #include <stdio.h>
-
 /**
 * fib - Prints fibonacci numbers of 50
+* main - Executes all code
+* Return: Always 0.
 */
 void fib(void)
 {
@@ -34,8 +35,8 @@ void fib(void)
 	}
 }
 /**
-* main = calling fib
-* Return = 0
+* main - Executes the fib
+* Return: Always 0
 */
 int main(void)
 {
