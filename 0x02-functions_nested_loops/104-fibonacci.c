@@ -1,36 +1,46 @@
 #include <stdio.h>
-/**
-* fibo_seq - prints the first 98 fibonacci numbers
-*/
-void fibo_seq(void)
-{	unsigned long x = 0;
-	unsigned long y = 1;
-	unsigned long z;
-	unsigned long i = 0;
 
-	while (i <= 94)
+/**
+* fib - Prints fibonacci numbers of 50
+* main - Executes all code
+* Return: Always 0.
+*/
+void fib(void)
+{
+	int i;
+	unsigned long f = 1;
+	unsigned long s = 2;
+	unsigned long r;
+
+	for (i = 0; i <= 95; i++)
 	{
-		z = x + y;
-		if (i <= 93)
+		if (i != 0)
 		{
-			printf("%lu, ", z);
-			x = y;
-			y = z;
+			printf(" ");
 		}
-		else
+
+		if (i == 0)
 		{
-			printf("%lu", z);
+			printf("%lu, %lu, ", f, s);
 		}
-		i++;
+		if (i == 95)
+		{
+			r = f + s;
+			printf("%lu\n", r);
+			break;
+		}
+		r = f + s;
+		printf("%lu,", r);
+		f = s;
+		s = r;
 	}
-	printf("\n");
 }
 /**
-* main - return 0 and call fibo_seq function
-* Return: Always  0
+* main - Executes the fib
+* Return: Always 0
 */
 int main(void)
 {
-	fibo_seq();
+	fib();
 	return (0);
 }
