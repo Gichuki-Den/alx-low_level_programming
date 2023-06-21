@@ -2,7 +2,7 @@
 /**
 * fibo - prints fibonacci numbers of first 98 order
 */
-void fibo_seq(void)
+void fibo(void)
 {
 	unsigned long x = 1;
 	unsigned long y = 2;
@@ -21,7 +21,7 @@ void fibo_seq(void)
 		x = y;
 		y = z;
 		}
-	count++
+		count++
 	printf("\n");
 }
 /**
