@@ -4,8 +4,8 @@
 */
 void fibo_seq(void)
 {
-	unsigned long x = 2;
-	unsigned long y = 1;
+	unsigned long x = 1;
+	unsigned long y = 2;
 	unsigned long z;
 	unsigned long count = 2;
 
@@ -15,19 +15,20 @@ void fibo_seq(void)
 	{
 		z = x + y;
 		printf(", %lu, ", z);
-		x = z;
-		y = x;
+		x = y;
+		y = z;
 		count++;
 	}
 	printf("\n");
 }
 /**
- * main - return o and call the fibo_seq function
- * return 0 always 
- */
+* main - return o and call the fibo_seq function
+*/
 int main(void)
 {
 	fibo_seq();
-
+	/**
+	* return 0 always
+	*/
 	return (0);
 }
