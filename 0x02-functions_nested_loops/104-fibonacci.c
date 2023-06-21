@@ -7,11 +7,11 @@ void fibo_seq(void)
 	unsigned long y = 1;
 	unsigned long z;
 	unsigned long i = 0;
-	
-	while (i <= 98)
+
+	while (i <= 95)
 	{
 		z = x + y;
-		if (i <= 97)
+		if (i <= 94)
 		{
 			printf("%lu, ", z);
 			x = y;
