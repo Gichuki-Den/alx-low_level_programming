@@ -1,27 +1,25 @@
 #include <stdio.h>
-
-void print_fibonacci_sequence()
+void fibo_seq(void)
 {
-	unsigned int prev = 1;
-	unsigned int curr = 2;
+	int current = 1;
+	int next = 2;
+	int count = 2;
 
-	// Print the first two Fibonacci numbers
-	printf("%u, %u", prev, curr);
+	printf("1, 2");
 
-	for (int i = 3; i <= 98; i++)
+	while (count < 98)
 	{
-		unsigned int next = prev + curr;
-		printf(", %u", next);
-		prev = curr;
-		curr = next;
-	}
+		next = next + current;
+		current = next - current;
+		count++;
 
+		count++;
+	}
 	printf("\n");
 }
-
-int main()
+int main(void)
 {
-	print_fibonacci_sequence();
+	fibo_seq();
 
-	return 0;
+	return (0);
 }
