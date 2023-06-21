@@ -9,8 +9,8 @@ void fibo(void)
 	unsigned long curr = 2;
 
 	printf("%lu, %lu", prev, curr);
-
-	for (int i = 3; i <= 50; i++)
+	int i;
+	for (i = 3; i <= 50; i++)
 	{
 		unsigned long next = prev + curr;
 		printf(", %lu", next);
