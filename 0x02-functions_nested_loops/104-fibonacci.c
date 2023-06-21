@@ -4,17 +4,15 @@
 */
 void fibo_seq(void)
 {
-	unsigned long x = 1;
-	unsigned long y = 2;
+	unsigned long x = 0;
+	unsigned long y = 1;
 	unsigned long z;
-	unsigned long count = 5;
+	unsigned long count = 1;
 
-	printf("1, 2,");
-
-	while (count < 98)
+	while (count <= 98)
 	{
 		z = x + y;
-		printf(" %lu,", z);
+		printf("%lu, ", z);
 		x = y;
 		y = z;
 		count++;

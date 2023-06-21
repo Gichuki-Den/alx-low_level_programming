@@ -15,7 +15,7 @@ void fib(void)
 		printf("%lu, ", r);
 		f = s;
 		s = r;
-	{
+	}
 }
 /**
 * main - return o and call the fib function
