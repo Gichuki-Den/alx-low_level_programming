@@ -13,7 +13,7 @@ void fibo_seq(void)
 
 	while (count < 98)
 	{
-		x + y = z;
+		z = x + y;
 		printf(", %u, ", z);
 		x = z;
 		y = x;
