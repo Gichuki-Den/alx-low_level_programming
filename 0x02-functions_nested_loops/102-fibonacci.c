@@ -3,25 +3,23 @@
  * main - print the first 50 fibonacci numbers.
  * Return: Nothing.
  */
-int main(void)
+void fibo(void)
 {
-	unsigned long x = 1;
-	unsigned long y = 2;
-	unsigned long z;
-	int i;
+	unsigned long long prev = 1;
+	unsigned long long curr = 2;
 
-	for (i = 0; i < 50; i++)
+	printf("%llu, %llu", prev, curr);
+
+	for (int i = 3; i <= 50; i++)
 	{
-		if (i <= 0)
-		{
-			printf("%lu, %lu, ", x, y);
-		}
-		else if (i > 0)
-		{
-			z = x + y;
-			printf("%lu, ", z);
-			x = y;
-			y = z;
-		}
+		unsigned long long next = prev + curr;
+		printf(", %llu", next);
+		prev = curr;
+		curr = next;
 	}
+}
+int main()
+{
+	fibo();
+	return 0;
 }
