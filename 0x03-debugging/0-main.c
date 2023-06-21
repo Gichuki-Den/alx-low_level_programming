@@ -1,8 +1,10 @@
 #include "main.h"
+
 /**
-* main - runs to check if valut given is either +ve or-ve
+* main - tests function prints if integer positive or negative
 * Return: 0
 */
+
 int main(void)
 {
 	int i;
