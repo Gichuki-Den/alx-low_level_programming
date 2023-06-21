@@ -23,9 +23,10 @@ void fibo_seq(void)
 }
 /**
 * main - return o and call the fibo_seq function
+* Return: Always 0.
 */
 int main(void)
 {
 	fibo_seq();
-	return (0); // Indicate successful execution
+	return (0);
 }
