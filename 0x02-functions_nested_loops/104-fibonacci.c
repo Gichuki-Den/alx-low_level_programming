@@ -14,7 +14,7 @@ void fibo_seq(void)
 	while (count < 98)
 	{
 		z = x + y;
-		printf(" %lu, ", z);
+		printf(" %lu,", z);
 		x = y;
 		y = z;
 		count++;
@@ -27,8 +27,5 @@ void fibo_seq(void)
 int main(void)
 {
 	fibo_seq();
-	/**
-	* return 0 always
-	*/
-	return (0);
+	return (0); // Indicate successful execution
 }
