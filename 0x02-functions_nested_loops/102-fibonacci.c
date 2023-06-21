@@ -5,23 +5,29 @@
  */
 int main(void)
 {
-	unsigned long count, start, second, final;
+	unsigned long x = 1;
+	unsigned long y = 2;
+	unsigned long z;
+	int i;
 
-	start = 0;
-	second  = 1;
-
-	for (count = 0; count < 50; count++)
+	for (i = 0; i < 50; i++)
 	{
-		final = start + second;
-		start = second;
-		second = final;
-		printf("%lu", k);
-		if (count <= 49)
-			putchar('\n');
-		else
+		if (i <= 0)
 		{
-			printf(", ");
+			printf("%u, %u, ", x, y);
+		}
+		else if (i > 0)
+		{
+			z = x + y;
+			printf("%u, ", z);
+			x = y;
+			y = z;
 		}
 	}
+}
+
+int main(void)
+{
+	fib();
 	return (0);
 }
