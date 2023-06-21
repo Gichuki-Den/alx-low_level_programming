@@ -25,9 +25,3 @@ int main(void)
 		}
 	}
 }
-
-int main(void)
-{
-	fib();
-	return (0);
-}
