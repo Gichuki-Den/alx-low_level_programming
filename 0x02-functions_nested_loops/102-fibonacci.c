@@ -5,18 +5,20 @@
  */
 void fibo(void)
 {
-	unsigned long long prev = 1;
-	unsigned long long curr = 2;
+	unsigned long prev = 1;
+	unsigned long curr = 2;
 
-	printf("%llu, %llu", prev, curr);
+	printf("%lu, %lu", prev, curr);
 
 	for (int i = 3; i <= 50; i++)
 	{
 		unsigned long long next = prev + curr;
-		printf(", %llu", next);
+		printf(", %lu", next);
 		prev = curr;
 		curr = next;
 	}
+
+	printf("\n");
 }
 int main()
 {
