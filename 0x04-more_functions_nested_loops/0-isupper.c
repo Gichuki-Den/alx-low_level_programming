@@ -13,4 +13,6 @@ int _isupper(int c)
 	else
 		res = 0;
 	return (res);
+	
+	_putchar("\n");
 }
