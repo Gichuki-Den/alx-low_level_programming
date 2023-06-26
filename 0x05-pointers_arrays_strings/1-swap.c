@@ -1,4 +1,4 @@
-i#include <stdio.h>
+#include <stdio.h>
 #include "main.h"
 /**
 * swap_int - swaps the value of the first and second integer
