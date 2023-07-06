@@ -1,16 +1,12 @@
+#include <stdio.h>
+#include <string.h>
 #include "main.h"
 /**
-* _puts_recursion - function like puts();
-* @s: input
-* Return: Always 0 (Success)
+* _strlen_recursion - prints out the length of a string
+* @s: The string to be printed out
+* Return: The length of the string
 */
-void _puts_recursion(char *s)
+int _strlen_recursion(char *s)
 {
-	if (*s)
-	{
-		_putchar(*s);
-		_puts_recursion(s + 1);
-	}
-	else
-		_putchar('\n');
+	return (strlen(s));
 }
